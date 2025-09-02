@@ -1,0 +1,28 @@
+{
+  "name": "ausidevelopmentpm/mcbedrock-query",
+  "description": "A PocketMine-MP Virion to query Minecraft Bedrock servers via UDP.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Noah W. (AusiPlayz)",
+      "email": "support@ausiplayz.lol",
+      "role": "Founder",
+      "homepage": "https://www.ausidevelopment.xyz"
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "autoload": {
+    "psr-4": {
+      "AustrianNoah\\McBedrockQuery\\": "src/austriannoah/mcbedrockquery/"
+    }
+  },
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.12"
+  },
+  "scripts": {
+    "analyse": "phpstan analyse src"
+  }
+}
