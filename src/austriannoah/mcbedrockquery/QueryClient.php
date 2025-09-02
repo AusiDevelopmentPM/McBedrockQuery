@@ -46,7 +46,7 @@ final class QueryClient {
         fclose($socket);
 
         if ($data === false || strlen($data) <= 0) {
-            throw new RuntimeException("No response from server");
+            throw new QueryException("No response from server");
         }
 
         if ($data[0] !== "}x1C") {
